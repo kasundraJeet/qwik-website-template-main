@@ -55,6 +55,31 @@ body {
   @apply text-lg font-medium text-grey20;
 }
 
-.step-count{
-  @apply text-darkGreen40 font-bold text-[150px] -mb-20 -z-10 relative
+.step-count {
+  @apply text-darkGreen40 font-bold text-[150px] -mb-20 -z-10 relative;
+}
+
+.contact-box {
+  @apply w-full p-20  bg-green95 border border-solid border-green85 rounded-xl;
+}
+
+.input-group {
+  @apply w-full flex flex-col gap-2.5;
+}
+
+.input-group label {
+  @apply font-semibold text-lg text-[#4C4C4C];
+}
+
+.input-group input,
+.input-group textarea {
+  @apply w-full border border-solid border-green80 bg-green90 rounded-lg px-4 py-2.5 text-lg;
+}
+
+.input-group textarea {
+  @apply min-h-32 resize-none;
+}
+
+.submit--btn {
+  @apply text-center w-full rounded-lg bg-green70 font-semibold text-lg py-3;
 }
