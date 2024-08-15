@@ -76,10 +76,19 @@ body {
   @apply w-full border border-solid border-green80 bg-green90 rounded-lg px-4 py-2.5 text-lg;
 }
 
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  @apply text-grey40;
+}
+
 .input-group textarea {
   @apply min-h-32 resize-none;
 }
 
 .submit--btn {
   @apply text-center w-full rounded-lg bg-green70 font-semibold text-lg py-3;
+}
+
+.contact-social-icon {
+  @apply min-w-16 min-h-16 max-w-16 max-h-16 flex items-center justify-center rounded-lg bg-green70;
 }
