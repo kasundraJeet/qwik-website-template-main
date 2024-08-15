@@ -3,9 +3,11 @@ import styles from "./demo.css?inline";
 import { Image } from "@unpic/qwik";
 import Image1 from "/images/abstract-design.png";
 import Image2 from "/images/abstract-design-2.png";
+import { Toaster, toast } from "qwik-sonner";
 
 export default component$(() => {
   useStyles$(styles);
+
   return (
     <div class="demo--box">
       <div class="space-y-3 max-w-5xl">
@@ -17,7 +19,8 @@ export default component$(() => {
           and well-being.
         </p>
       </div>
-      <button>Book a Demo</button>
+      <Toaster richColors={true} />
+      <button onClick$={() => toast("My first toast")}>Book a Demo</button>
       <div class="image-1">
         <Image src={Image1} alt="design" width={164} height={164} />
       </div>

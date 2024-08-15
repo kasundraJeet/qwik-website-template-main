@@ -11,23 +11,23 @@ const navLink = [
   },
   {
     link_name: "About",
-    link_path: "/",
+    link_path: "/about",
   },
   {
     link_name: "Team",
-    link_path: "/",
+    link_path: "/team",
   },
   {
     link_name: "Process",
-    link_path: "/",
+    link_path: "/process",
   },
   {
     link_name: "Pricing",
-    link_path: "/",
+    link_path: "/pricing",
   },
   {
     link_name: "Blog",
-    link_path: "/",
+    link_path: "/blog",
   },
 ];
 
@@ -91,7 +91,7 @@ export default component$(() => {
                   </li>
                 ))}
               </ul>
-              <Link href="/" class="nav-btn">
+              <Link href="/contact" class="nav-btn">
                 Contact Us
               </Link>
             </div>

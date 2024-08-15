@@ -15,7 +15,7 @@ const footerLink = [
   },
   {
     link: "Team",
-    path: "/",
+    path: "/team",
   },
   {
     link: "Process",
