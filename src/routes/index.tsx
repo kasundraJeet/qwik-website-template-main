@@ -1,6 +1,11 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
+import { Image } from "@unpic/qwik";
 import { Section, FeaturesBox, BlogBox } from "~/components";
+import heroImage from "/images/hero.png";
+import avatar1 from "/images/avatar-1.png";
+import avatar2 from "/images/avatar-2.png";
+import avatar3 from "/images/avatar-3.png";
 
 const featuresComponent = {
   space_y: "50px",
@@ -103,6 +108,69 @@ const blogList = [
 export default component$(() => {
   return (
     <>
+      <section class="w-full grid grid-cols-2 items-center gap-12">
+        <div class="w-full relative rounded-br-2xl pt-[80%] overflow-hidden">
+          <Image
+            src={heroImage}
+            alt=""
+            class="absolute inset-0 w-full h-full overflow-hidden"
+          />
+        </div>
+        <div class="w-full flex flex-col items-start gap-16 max-w-3xl">
+          <div class="flex flex-col items-start gap-12">
+            <div class="flex flex-col items-start gap-5">
+              <div class="flex flex-col items-start gap-3.5">
+                <h2 class="font-semibold text-2xl text-darkGreen15 border-b-4 pb-2 border-green70">
+                  Transform Your ❤️ Health with
+                </h2>
+                <h1 class="font-bold text-6xl text-darkGreen15">
+                  Personalized Nutrition Coaching
+                </h1>
+              </div>
+              <p class="font-medium text-lg text-grey20">
+                Welcome to Nutritionist, your partner in achieving optimal
+                health through personalized nutrition coaching. Our certified
+                nutritionists are here to guide you on your weight loss journey,
+                providing customized plans and ongoing support. Start your
+                transformation today and experience the power of personalized
+                nutrition coaching.
+              </p>
+            </div>
+            <div class="flex items-stretch gap-5">
+              <button class="hero--btn">Get Starter Today</button>
+              <button class="hero--btn transparent">Book a Demo</button>
+            </div>
+          </div>
+          <div class="flex items-center gap-2">
+            <div class="rounded-full border border-solid border-green70 py-2 px-2.5">
+              <div class="flex items-stretch -space-x-3">
+                <Image
+                  src={avatar1}
+                  alt=""
+                  width="50" height="50"
+                  class="avatar-image"
+                />
+                <Image
+                  src={avatar2}
+                  alt=""
+                   width="50" height="50"
+                  class="avatar-image"
+                />
+                <Image
+                  src={avatar3}
+                  alt=""
+                  width="50" height="50"
+                  class="avatar-image"
+                />
+              </div>
+            </div>
+            <p class="text-xl text-darkGreen20 font-semibold">
+              <span class="text-darkGreen40 font-bold">430+</span> Happy
+              Customers
+            </p>
+          </div>
+        </div>
+      </section>
       <Section
         class="container-regular py-12 lg:py-24 2xl:py-36"
         data={featuresComponent}
