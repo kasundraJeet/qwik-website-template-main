@@ -6,6 +6,14 @@ import heroImage from "/images/hero.png";
 import avatar1 from "/images/avatar-1.png";
 import avatar2 from "/images/avatar-2.png";
 import avatar3 from "/images/avatar-3.png";
+import blog1 from "/images/blog-1.png";
+import blog2 from "/images/blog-2.png";
+import blog3 from "/images/blog-3.png";
+import blog4 from "/images/blog-4.png";
+import auth1 from "/images/auth-1.png";
+import auth2 from "/images/auth-2.png";
+import auth3 from "/images/auth-3.png";
+import auth4 from "/images/auth-4.png";
 
 const featuresComponent = {
   space_y: "50px",
@@ -68,40 +76,44 @@ const blogList = [
     category: "Weight Loss",
     description:
       "Discover how staying hydrated can support your weight loss goals and improve overall health.",
-    image: "woman_drinking_water.jpg",
+    image: blog1,
     author: "Emily Johnson",
     date: "23 May 2023",
     read_time: "3 min read",
+    auth_image: auth1,
   },
   {
     title: "Cultivating a Healthy Relationship with Food",
     category: "Mindful Eating",
     description:
       "Learn how to develop a mindful eating habit to cultivate a healthier relationship with food and improve your overall well-being.",
-    image: "woman_holding_apple_burger.jpg",
+    image: blog2,
     author: "Sarah Thompson",
     date: "23 May 2023",
     read_time: "4 min read",
+    auth_image: auth2,
   },
   {
     title: "Carbohydrates, Proteins, and Fats",
     category: "Understanding Macronutrients",
     description:
       "Gain a comprehensive understanding of macronutrients and their role in your diet for optimal health and weight management.",
-    image: "two_women_holding_food.jpg",
+    image: blog3,
     author: "Mark Wilson",
     date: "23 May 2023",
     read_time: "5 min read",
+    auth_image: auth3,
   },
   {
     title: "Quick and Nutritious Options",
     category: "Healthy Snacks on the Go",
     description:
       "Explore a variety of convenient and healthy snack ideas to keep you fueled throughout the day.",
-    image: "healthy_snacks.jpg",
+    image: blog4,
     author: "Emily Johnson",
     date: "23 May 2023",
     read_time: "3 min read",
+    auth_image: auth4,
   },
 ];
 
@@ -147,19 +159,22 @@ export default component$(() => {
                 <Image
                   src={avatar1}
                   alt=""
-                  width="50" height="50"
+                  width="50"
+                  height="50"
                   class="avatar-image"
                 />
                 <Image
                   src={avatar2}
                   alt=""
-                   width="50" height="50"
+                  width="50"
+                  height="50"
                   class="avatar-image"
                 />
                 <Image
                   src={avatar3}
                   alt=""
-                  width="50" height="50"
+                  width="50"
+                  height="50"
                   class="avatar-image"
                 />
               </div>
@@ -184,7 +199,7 @@ export default component$(() => {
       <Section class="container-regular" data={blogComponent}>
         <div class="grid grid-cols-2 gap-5 2xl:gap-7">
           {blogList.map((blog, i) => (
-            <BlogBox key={i} />
+            <BlogBox key={i} {...blog} />
           ))}
         </div>
       </Section>
