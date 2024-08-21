@@ -69,6 +69,22 @@ export default component$(() => {
                 />
               </svg>
             </div>
+            <div class="absolute left-12 top-0">
+              <Image
+                width="196"
+                height="44"
+                src="/images/abstract-design-3.png"
+                alt="abstract design"
+              />
+            </div>
+            <div class="absolute right-12  top-0">
+              <Image
+                width="196"
+                height="44"
+                src="/images/abstract-design-4.png"
+                alt="abstract design"
+              />
+            </div>
           </div>
         </div>
       </div>

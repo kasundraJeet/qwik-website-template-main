@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import { Section, FeaturesBox, DemoBox } from "~/components";
 import StoryBox from "./components/StoryBox";
+import { FoodIcon , PlanningIcon ,  GuidanceIcon , FlowerIcon } from "~/components/icon";
 import Image1 from "/images/inspiring-transformations-story.png";
 import Image2 from "/images/recognition-and-accolades-story.png";
 import Image3 from "/images/continued-growth-story.png";
@@ -36,21 +37,25 @@ const achievementsComponent = {
 
 const featuresList = [
   {
+    icon : FlowerIcon,
     title: "10,000+ Transformations",
     description:
       "Our personalized nutrition plans have helped thousands of individuals reach their weight loss goals and maintain a healthy lifestyle.",
   },
   {
+    icon : GuidanceIcon,
     title: "Recognition for Excellence",
     description:
       "Nutritionist has been recognized as a leading provider of personalized nutrition coaching, receiving accolades for our innovative approach and commitment to client success.",
   },
   {
+    icon : FoodIcon,
     title: "Positive Client Reviews",
     description:
       "We have received numerous testimonials from satisfied clients who have experienced significant improvements in their health, weight, and overall well-being through our coaching program.",
   },
   {
+    icon : PlanningIcon,
     title: "Collaborate With Top Health Experts.",
     description:
       "Nutritionist has established partnerships with respected nutritionists, dietitians, and health experts to ensure that our clients receive the highest quality guidance and support.",

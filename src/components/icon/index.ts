@@ -1,0 +1,12 @@
+export { FoodIcon } from "./Food";
+export { PlanningIcon } from "./Planning";
+export { LifestyleIcon } from "./Lifestyle";
+export { NutritionalIcon } from "./Nutritional";
+export { GuidanceIcon } from "./Guidance";
+export { FlowerIcon } from "./Flower";
+export { ConsultationIcon } from "./Consultation";
+export { BasketIcon } from "./Basket";
+export { HeadPhoneIcon } from "./HeadPhone";
+export { TrackingIcon } from "./Tracking";
+export { PinIcon } from "./Pin";
+export { TeaIcon } from "./Tea";
