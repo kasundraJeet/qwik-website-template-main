@@ -1,8 +1,15 @@
 import { component$ } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Image } from "@unpic/qwik";
-import { Section, FeaturesBox, BlogBox } from "~/components";
-import { FoodIcon , PlanningIcon , LifestyleIcon , NutritionalIcon , GuidanceIcon , FlowerIcon } from "~/components/icon";
+import { Section, FeaturesBox, BlogBox, PricingBoxNormal } from "~/components";
+import {
+  FoodIcon,
+  PlanningIcon,
+  LifestyleIcon,
+  NutritionalIcon,
+  GuidanceIcon,
+  FlowerIcon,
+} from "~/components/icon";
 import heroImage from "/images/hero.png";
 import avatar1 from "/images/avatar-1.png";
 import avatar2 from "/images/avatar-2.png";
@@ -35,6 +42,17 @@ const blogComponent = {
     title: "Our Blogs",
     sub_title:
       "Our blog is a treasure trove of informative and engaging articles written by our team of nutritionists, dietitians, and wellness experts. Here's what you can expect from our blog.",
+  },
+};
+
+const pricingComponent = {
+  space_y: "50px",
+  space_y_lg: "60px",
+  space_y_2xl: "80px",
+  heading: {
+    title: "Our Pricing",
+    sub_title:
+      "We outline our flexible and affordable options to support you on your journey to optimal health and nutrition. We believe that everyone deserves access to personalized nutrition guidance and resources",
   },
 };
 
@@ -124,6 +142,27 @@ const blogList = [
   },
 ];
 
+const pricingData = [
+  {
+    title: "Basic Plan",
+    description: "Up to 50% off on Yearly Plan",
+    text: "Get started on your health journey with our Basic Plan. It includes personalized nutrition coaching, access to our app, meal planning assistance, and email support.",
+    price: "$49/month",
+  },
+  {
+    title: "Premium Plan",
+    description: "Up to 50% off on Yearly Plan",
+    text: "Upgrade to our Premium Plan for enhanced features. In addition to the Basic Plan, you'll receive video consultations, priority support, and personalized recipe recommendations.",
+    price: "$79/month",
+  },
+  {
+    title: "Ultimate Plan",
+    description: "Up to 50% off on Yearly Plan",
+    text: "Experience the full benefits of personalized nutrition coaching with our Ultimate Plan. Enjoy all the features of the Premium Plan, along with 24/7 chat support and exclusive workshops.",
+    price: "$99/month",
+  },
+];
+
 export default component$(() => {
   return (
     <>
@@ -207,6 +246,13 @@ export default component$(() => {
         <div class="grid grid-cols-2 gap-5 2xl:gap-7">
           {blogList.map((blog, i) => (
             <BlogBox key={i} {...blog} />
+          ))}
+        </div>
+      </Section>
+      <Section class="container-regular" data={pricingComponent}>
+        <div class="grid grid-cols-3 gap-3 2xl:gap-5">
+          {pricingData.map((plan, i) => (
+            <PricingBoxNormal data={plan} key={i} />
           ))}
         </div>
       </Section>

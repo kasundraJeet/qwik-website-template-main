@@ -1,0 +1,7 @@
+.pricing--box {
+  @apply w-full bg-green95 border border-solid border-green90 p-12 space-y-10;
+}
+
+.pricing--btn {
+  @apply w-full font-semibold text-lg text-grey15 bg-green70 py-4 px-8 rounded-lg;
+}
