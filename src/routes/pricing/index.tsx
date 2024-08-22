@@ -1,7 +1,7 @@
 import { component$, useSignal, $ } from "@builder.io/qwik";
 import { Image } from "@unpic/qwik";
 import Image1 from "/images/abstract-design.png";
-import { Hero, Section } from "~/components";
+import { Hero, Section, PricingBoxPremium } from "~/components";
 
 const heroContent = {
   title: "Our Pricing",
@@ -117,6 +117,47 @@ const features = [
   },
 ];
 
+const pricingData = {
+  pricingPlans: [
+    {
+      name: "Basic Plan",
+      discount: "Up to 50% off on Yearly Plan",
+      price: "$49",
+      features: [
+        "Personalized nutrition plan tailored to your goals and dietary preferences",
+        "Access to our mobile app for convenient meal tracking and progress monitoring",
+        "Email support to address your questions and concerns",
+        "Regular check-ins with a dedicated nutritionist to review your progress and provide guidance",
+      ],
+    },
+    {
+      name: "Premium Plan",
+      discount: "Up to 50% off on Yearly Plan",
+      price: "$79",
+      features: [
+        "All the features included in the Basic Plan",
+        "One-on-one video consultations with your dedicated nutritionist for more personalized guidance and support",
+        "Recipe recommendations and meal planning assistance",
+        "Priority email support for quicker responses to your inquiries",
+        "Educational resources and guides to deepen your understanding of nutrition and healthy habits",
+      ],
+    },
+    {
+      name: "Ultimate Plan",
+      discount: "Up to 50% off on Yearly Plan",
+      price: "$99",
+      features: [
+        "All the features included in the Plus Plan",
+        "Unlimited access to video consultations with your dedicated nutritionist for ongoing support and accountability",
+        "Advanced progress tracking tools to monitor your weight, body measurements, and fitness goals",
+        "Customized meal plans and recipe suggestions based on your preferences and nutritional needs",
+        "Priority email and phone support for immediate assistance",
+      ],
+      note: "The Premium Plan is designed for individuals who are committed to achieving significant results and require the highest level of support and personalization",
+    },
+  ],
+};
+
 export default component$(() => {
   const openIndex = useSignal(0);
 
@@ -128,6 +169,13 @@ export default component$(() => {
     <main>
       <section class="container-regular">
         <Hero {...heroContent} />
+      </section>
+      <section class="container-regular">
+        <div class="grid grid-cols-3 gap-7 items-start">
+          {pricingData.pricingPlans.map((plan, index) => (
+            <PricingBoxPremium key={index} plan={plan} />
+          ))}
+        </div>
       </section>
       <section class="container-regular">
         <div class="w-full bg-green95 border border-solid border-green85 p-12 rounded-xl">

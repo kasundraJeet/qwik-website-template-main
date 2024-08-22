@@ -6,3 +6,6 @@ export { default as DemoBox } from "./demo/DemoBox";
 export { default as Hero } from "./hero/Hero";
 export { default as Header } from "./header/Header";
 export { default as PricingBoxNormal } from "./pricing/PricingBoxNormal";
+export { default as PricingBoxPremium } from "./pricing/PricingBoxPremium";
+
+
