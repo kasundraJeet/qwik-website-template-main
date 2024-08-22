@@ -1,4 +1,5 @@
 import { component$, useSignal, $ } from "@builder.io/qwik";
+import type { DocumentHead } from "@builder.io/qwik-city";
 import { Image } from "@unpic/qwik";
 import Image1 from "/images/abstract-design.png";
 import { Hero, Section, PricingBoxPremium } from "~/components";
@@ -377,3 +378,68 @@ export default component$(() => {
     </main>
   );
 });
+
+
+export const head: DocumentHead = {
+  title: "Nutritionist - Personalized Nutrition Coaching",
+  meta: [
+    {
+      name: "description",
+      content:
+        "Transform your health with personalized nutrition coaching. Our certified nutritionists provide customized plans and ongoing support for your weight loss journey.",
+    },
+    {
+      name: "keywords",
+      content:
+        "nutrition, personalized coaching, health transformation, weight loss, nutrition plans, certified nutritionists",
+    },
+    {
+      name: "author",
+      content: "jeet kasundra",
+    },
+    {
+      name: "robots",
+      content: "index, follow",
+    },
+    {
+      property: "og:title",
+      content: "Nutritionist - Personalized Nutrition Coaching",
+    },
+    {
+      property: "og:description",
+      content:
+        "Transform your health with personalized nutrition coaching. Start your journey to optimal health today!",
+    },
+    {
+      property: "og:image",
+      content: "https://jeetkasundra.com/metaImage.png",
+    },
+    {
+      property: "og:url",
+      content: "https://jeetkasundra.com",
+    },
+    {
+      name: "twitter:card",
+      content: "summary_large_image",
+    },
+    {
+      name: "twitter:title",
+      content: "Nutritionist - Personalized Nutrition Coaching",
+    },
+    {
+      name: "twitter:description",
+      content:
+        "Transform your health with personalized nutrition coaching. Start your journey to optimal health today!",
+    },
+    {
+      name: "twitter:image",
+      content: "https://jeetkasundra.com/metaImage.png",
+    },
+  ],
+  links: [
+    {
+      rel: "canonical",
+      href: "https://jeetkasundra.com",
+    },
+  ],
+};

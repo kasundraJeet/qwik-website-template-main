@@ -16,14 +16,14 @@ const BlogBox = component$<BlogBoxProps>(
     return (
       <div class="blog-box">
         <div class="blog-head-wrapper">
-          <h6>{category}</h6>
+          <h3>{category}</h3>
           <div class="image-wrapper">
             <Image src={image} alt={alt} width="531" height="228" />
           </div>
         </div>
         <div class="blog-content">
           <div class="space-y-2.5">
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             <p>{description}</p>
           </div>
           <button>Read More</button>

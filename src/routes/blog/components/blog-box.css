@@ -6,7 +6,7 @@
   @apply w-full px-12 py-7 flex items-center gap-6;
 }
 
-.blog-content h3 {
+.blog-content h4 {
   @apply text-[#262626] font-semibold text-2xl;
 }
 
@@ -31,6 +31,6 @@
   @apply w-full border-b border-solid border-[#E5F5BD] px-12 pt-7 space-y-12;
 }
 
-.blog-head-wrapper h6 {
+.blog-head-wrapper h3 {
   @apply font-semibold text-[#333333] text-2xl py-2 border-b-2 border-solid border-[#CBEA7B] w-fit;
 }
