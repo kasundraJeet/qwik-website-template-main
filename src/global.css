@@ -104,3 +104,29 @@ body {
 .avatar-image {
   @apply min-w-12 min-h-12 max-w-12 max-h-12 rounded-full object-cover;
 }
+
+.check-box--features-table {
+  @apply min-w-10 min-h-10 max-w-10 max-h-10 flex items-center justify-center rounded-lg bg-green70 mx-auto;
+}
+
+.features--table thead tr th div {
+  @apply bg-darkGreen20 rounded-lg text-white py-3.5 px-6 text-xl;
+}
+
+.features--table thead {
+  @apply sticky top-0 bg-green95 w-full;
+}
+
+.features--table td,
+.features--table th {
+  @apply px-7 border-r border-solid  border-green80 py-12;
+}
+
+.features--table th:nth-last-child(1),
+.features--table td:nth-last-child(1) {
+  @apply border-none;
+}
+
+.features--table th:nth-child(1) div {
+  @apply text-left;
+}
