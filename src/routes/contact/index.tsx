@@ -55,8 +55,10 @@ export default component$(() => {
     validate: valiForm$(contactForm),
   });
 
+  console.log(contactFormState);
+
   const handleSubmit: QRL<SubmitHandler<ContactForm>> = $((values, event) => {
-    console.log(values);
+    console.log(values, event);
   });
 
   return (
@@ -200,7 +202,6 @@ export default component$(() => {
     </main>
   );
 });
-
 
 export const head: DocumentHead = {
   title: "Nutritionist - Personalized Nutrition Coaching",
