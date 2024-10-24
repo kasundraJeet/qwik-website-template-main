@@ -50,7 +50,7 @@ export default component$(() => {
         <Hero {...heroContent} />
       </section>
       <section class="container-regular py-12 lg:py-24 2xl:py-36">
-        <div class="grid grid-cols-4 gap-7">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 sm:gap-7 gap-4">
           {teamList.map((team, i) => (
             <MembersBox key={i} {...team} />
           ))}

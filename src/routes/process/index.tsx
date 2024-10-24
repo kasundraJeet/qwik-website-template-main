@@ -105,7 +105,7 @@ export default component$(() => {
         data={stepComponent}
       >
         <div class="w-full">
-          <div class="grid grid-cols-2 gap-5 2xl:gap-7">
+          <div class="grid md:grid-cols-2 grid-cols-1 md:gap-5 gap-0 2xl:gap-7">
             {stepList.map((step, i) => (
               <div key={i}>
                 <p class="step-count">
