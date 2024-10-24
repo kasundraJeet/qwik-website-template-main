@@ -151,7 +151,7 @@ export default component$(() => {
         <Hero {...heroContent} />
       </section>
       <section class="container-regular py-12 lg:py-24 2xl:py-36">
-        <div class="grid grid-cols-2 rounded-lg border border-solid !border-[#E5F5BD]">
+        <div class="grid md:grid-cols-2 grid-cols-1 rounded-lg border border-solid !border-[#E5F5BD]">
           {blogList.map((blog, index) => (
             <BlogBox
               key={index}

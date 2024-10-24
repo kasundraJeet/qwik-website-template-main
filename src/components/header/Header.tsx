@@ -38,7 +38,7 @@ export default component$(() => {
       <div class="py-3.5">
         <div class="container-regular !py-0">
           <div class="head--line">
-            <div class="flex items-center justify-center gap-6">
+            <div class="flex items-center justify-center md:gap-6 gap-4">
               <div class="flex items-center gap-1.5">
                 <svg
                   width="22"
@@ -69,7 +69,7 @@ export default component$(() => {
                 />
               </svg>
             </div>
-            <div class="absolute left-12 top-0">
+            <div class="absolute left-12 top-0 hidden sm:block">
               <Image
                 width="196"
                 height="44"
@@ -77,7 +77,7 @@ export default component$(() => {
                 alt="abstract design"
               />
             </div>
-            <div class="absolute right-12  top-0">
+            <div class="absolute right-12  top-0 hidden sm:block">
               <Image
                 width="196"
                 height="44"
@@ -99,7 +99,7 @@ export default component$(() => {
                 height="46"
               />
             </Link>
-            <div class="flex items-center gap-10">
+            <div class="flex items-center lg:gap-10 gap-6 max-[840px]:hidden">
               <ul class="nav-link--list">
                 {navLink.map((link, i) => (
                   <li key={i}>
@@ -110,6 +110,11 @@ export default component$(() => {
               <Link href="/contact" class="nav-btn">
                 Contact Us
               </Link>
+            </div>
+            <div class="max-[840px]:block hidden">
+                <button>
+
+                </button>
             </div>
           </nav>
         </div>

@@ -40,7 +40,7 @@ export default component$(() => {
   return (
     <footer class="footer">
       <div class="container-regular">
-        <div class="flex items-center justify-between w-full">
+        <div class="flex items-center justify-between lg:flex-nowrap flex-wrap gap-6 lg:gap-0 w-full">
           <Link href="/">
             <Image
               src={logo}
@@ -49,7 +49,7 @@ export default component$(() => {
               height={45}
             />
           </Link>
-          <ul class="flex items-center gap-6">
+          <ul class="flex items-center gap-6 order-last justify-center w-full lg:w-auto flex-wrap lg:flex-nowrap lg:order-none">
             {footerLink.map((link, index) => (
               <li key={index}>
                 <Link href={link.path} class="footer-link">
@@ -59,7 +59,7 @@ export default component$(() => {
             ))}
           </ul>
           <div class="flex items-center gap-3.5">
-            <p class="copy-right-text">Got To Top</p>
+            <p class="copy-right-text !mt-0">Got To Top</p>
             <button class="top-btn">
               <svg
                 width="14"
@@ -78,8 +78,8 @@ export default component$(() => {
             </button>
           </div>
         </div>
-        <div class="border border-darkGreen25 bg-darkGreen20 rounded-lg py-5 px-5 2xl:py-4 lg:py-3.5 flex items-center justify-between">
-          <div class="flex items-center gap-4 2xl:gap-5 w-full">
+        <div class="border border-darkGreen25 bg-darkGreen20 rounded-lg py-5 px-5 2xl:py-4 lg:py-3.5 flex items-center justify-between flex-col lg:flex-row">
+          <div class="flex items-center gap-4 flex-wrap lg:flex-nowrap 2xl:gap-5 w-full">
             <Link href="/" class="footer-link-btn">
               <svg
                 width="22"

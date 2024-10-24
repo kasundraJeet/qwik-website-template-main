@@ -7,7 +7,7 @@
 }
 
 .head--line p {
-  @apply font-medium text-white text-lg;
+  @apply font-medium text-white sm:text-lg text-xs;
 }
 
 .nav--bar {
@@ -23,5 +23,5 @@
 }
 
 .nav-btn {
-  @apply font-semibold text-lg text-grey15 bg-green70 py-3.5 px-6 rounded-md;
+  @apply font-semibold text-lg text-grey15 bg-green70 xl:py-3.5 py-2 xl:px-6 px-5 rounded-md;
 }

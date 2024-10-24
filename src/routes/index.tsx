@@ -167,15 +167,15 @@ export default component$(() => {
   return (
     <>
       <section class="w-full grid grid-cols-2 items-center gap-12">
-        <div class="w-full relative rounded-br-2xl pt-[80%] overflow-hidden">
+        <div class="w-full relative rounded-br-2xl xl:pt-[80%] pt-[140%] overflow-hidden">
           <Image
             src={heroImage}
             alt=""
-            class="absolute inset-0 w-full h-full overflow-hidden"
+            class="absolute inset-0 w-full h-full object-cover overflow-hidden"
           />
         </div>
-        <div class="w-full flex flex-col items-start gap-16 max-w-3xl">
-          <div class="flex flex-col items-start gap-12">
+        <div class="w-full flex flex-col items-start xl:gap-16 gap-6 max-w-3xl">
+          <div class="flex flex-col items-start xl:gap-12 gap-6">
             <div class="flex flex-col items-start gap-5">
               <div class="flex flex-col items-start gap-3.5">
                 <h2 class="font-semibold text-2xl text-darkGreen15 border-b-4 pb-2 border-green70">

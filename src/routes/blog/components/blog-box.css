@@ -3,7 +3,7 @@
 }
 
 .blog-content {
-  @apply w-full px-12 py-7 flex items-center gap-6;
+  @apply w-full lg:px-12 sm:px-9 px-4 lg:py-7 sm:py-5 py-4 flex-col lg:flex-row flex items-center gap-6;
 }
 
 .blog-content h4 {
@@ -15,7 +15,7 @@
 }
 
 .blog-content button {
-  @apply text-[#262626] font-semibold text-lg py-4 px-6 rounded-lg bg-[#CBEA7B] text-nowrap;
+  @apply text-[#262626] font-semibold lg:text-lg text-base lg:py-4 py-2.5 px-6 rounded-lg bg-[#CBEA7B] text-nowrap w-full lg:w-auto;
 }
 
 .blog-head-wrapper .image-wrapper{
@@ -28,9 +28,9 @@
 }
 
 .blog-head-wrapper {
-  @apply w-full border-b border-solid border-[#E5F5BD] px-12 pt-7 space-y-12;
+  @apply w-full border-b border-solid border-[#E5F5BD] sm:px-12 px-4 sm:pt-7 pt-4 space-y-12;
 }
 
 .blog-head-wrapper h3 {
-  @apply font-semibold text-[#333333] text-2xl py-2 border-b-2 border-solid border-[#CBEA7B] w-fit;
+  @apply font-semibold text-[#333333] sm:text-2xl text-xl sm:py-2 py-1 border-b-2 border-solid border-[#CBEA7B] w-fit;
 }

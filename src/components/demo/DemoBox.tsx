@@ -10,7 +10,7 @@ export default component$(() => {
 
   return (
     <div class="demo--box">
-      <div class="space-y-3 max-w-5xl">
+      <div class="space-y-3 max-w-5xl relative z-10">
         <h3 class="title">We Are Proud of Our Achievements</h3>
         <p class="sub-title">
           But our ultimate satisfaction comes from seeing our clients achieve

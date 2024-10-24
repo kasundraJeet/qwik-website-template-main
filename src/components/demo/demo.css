@@ -1,17 +1,17 @@
 .demo--box {
-  @apply w-full bg-green95 border border-green85 p-20 flex items-center justify-between gap-4 relative overflow-hidden;
+  @apply w-full bg-green95 border border-green85 2xl:p-20 md:p-14 sm:p-10 p-8 flex-col sm:flex-row flex items-center justify-between sm:gap-4 gap-3 relative overflow-hidden;
 }
 
 .demo--box .title {
-  @apply text-grey15 font-semibold text-3xl capitalize;
+  @apply text-grey15 font-semibold sm:text-3xl text-2xl capitalize;
 }
 
 .demo--box .sub-title {
-  @apply text-lg font-medium text-grey20;
+  @apply sm:text-lg text-base font-medium text-grey20;
 }
 
 .demo--box button {
-  @apply bg-green70 rounded-lg text-grey15 font-semibold text-lg py-4 px-6;
+  @apply bg-green70 rounded-lg text-grey15 font-semibold sm:text-lg text-base sm:py-4 py-2.5 px-6 text-nowrap relative z-10 w-full sm:w-auto;
 }
 
 .demo--box .image-1 {
